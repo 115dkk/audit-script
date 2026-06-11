@@ -24,7 +24,14 @@ if ((Test-Path $workflowTarget) -and -not $Force) {
 
 Copy-Item -LiteralPath $workflowSource -Destination $workflowTarget -Force:$Force
 
-foreach ($skill in "improve-codebase-architecture", "tech-debt-audit", "resolve-audit") {
+$skills = @(
+    "improve-codebase-architecture",
+    "tech-debt-audit",
+    "resolve-audit",
+    "tdd"
+)
+
+foreach ($skill in $skills) {
     $source = Join-Path $skillsSource $skill
     $target = Join-Path $skillsTarget $skill
 

@@ -8,6 +8,7 @@ This repository packages:
 - `.claude/skills/improve-codebase-architecture` - architecture review skill used by the workflow.
 - `.claude/skills/tech-debt-audit` - tech debt audit skill used by the workflow.
 - `.claude/skills/resolve-audit` - operator-invoked follow-up skill for turning audit issue findings into a PR.
+- `.claude/skills/tdd` - required by `resolve-audit` for behavior-changing findings.
 - `scripts/install-audit.ps1` and `scripts/install-audit.sh` - installers that copy the workflow and skills into a target repository.
 
 ## Install
@@ -65,6 +66,10 @@ The skill intentionally requires a classification confirmation step before code 
 - Category C: config, type, dependency, or documentation work, gated by lint/compiler/dependency checks.
 
 The resolve workflow is not scheduled automatically. That is deliberate: audit findings may require human prioritization before code modification.
+
+## Licensing
+
+See [LICENSES.md](LICENSES.md). This repository is private because not every bundled skill has a confirmed redistribution license.
 
 ## Notes
 

@@ -23,7 +23,7 @@ fi
 
 cp -f "$workflow_source" "$workflow_target"
 
-for skill in improve-codebase-architecture tech-debt-audit resolve-audit; do
+for skill in improve-codebase-architecture tech-debt-audit resolve-audit tdd; do
   source="$skills_source/$skill"
   target="$skills_target/$skill"
 
