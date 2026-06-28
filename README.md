@@ -69,7 +69,7 @@ The resolve workflow is not scheduled automatically. That is deliberate: audit f
 
 ## Licensing
 
-See [LICENSES.md](LICENSES.md). This repository is private because not every bundled skill has a confirmed redistribution license.
+See [LICENSES.md](LICENSES.md). MIT LICENSE.
 
 ## Notes
 
