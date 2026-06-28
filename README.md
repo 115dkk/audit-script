@@ -67,9 +67,9 @@ The skill intentionally requires a classification confirmation step before code 
 
 The resolve workflow is not scheduled automatically. That is deliberate: audit findings may require human prioritization before code modification.
 
-## Licensing
+## License
 
-See [LICENSES.md](LICENSES.md). MIT LICENSE.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## Notes
 
